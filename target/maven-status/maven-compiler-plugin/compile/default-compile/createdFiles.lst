@@ -2,6 +2,7 @@ com\portfolio\HSDI\Entity\Educacion.class
 com\portfolio\HSDI\Service\SExperiencia.class
 com\portfolio\HSDI\Repository\REducacion.class
 com\portfolio\HSDI\Controller\PersonaController.class
+com\portfolio\HSDI\Entity\HyS.class
 com\portfolio\HSDI\Security\jwt\JwtTokenFilter.class
 com\portfolio\HSDI\Entity\Persona.class
 com\portfolio\HSDI\Security\Enums\RolNombre.class
@@ -15,6 +16,7 @@ com\portfolio\HSDI\Security\jwt\JwtProvider.class
 com\portfolio\HSDI\Controller\CEducacion.class
 com\portfolio\HSDI\Security\Repository\iRolRepository.class
 com\portfolio\HSDI\Interface\IPersonaService.class
+com\portfolio\HSDI\Controller\CHyS.class
 com\portfolio\HSDI\Entity\Experiencia.class
 com\portfolio\HSDI\Security\Dto\NuevoUsuario.class
 com\portfolio\HSDI\Repository\RExperiencia.class
@@ -22,8 +24,10 @@ com\portfolio\HSDI\Controller\CExperiencia.class
 com\portfolio\HSDI\Repository\IPersonaRepository.class
 com\portfolio\HSDI\Service\ImpPersonaService.class
 com\portfolio\HSDI\Security\Repository\iUsuarioRepository.class
+com\portfolio\HSDI\Dto\dtoHyS.class
 com\portfolio\HSDI\Security\Dto\LoginUsuario.class
 com\portfolio\HSDI\Security\Entity\Usuario.class
+com\portfolio\HSDI\Service\SHyS.class
 com\portfolio\HSDI\Security\jwt\JwtEntryPoint.class
 com\portfolio\HSDI\Security\Service\UsuarioService.class
 com\portfolio\HSDI\Security\Service\RolService.class
@@ -32,3 +36,4 @@ com\portfolio\HSDI\HsdiApplication.class
 com\portfolio\HSDI\Security\Service\UserDetailsServicesImpl.class
 com\portfolio\HSDI\Dto\dtoEducacion.class
 com\portfolio\HSDI\Security\Controller\AuthController.class
+com\portfolio\HSDI\Repository\RHyS.class
