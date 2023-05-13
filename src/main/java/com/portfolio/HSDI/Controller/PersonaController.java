@@ -1,7 +1,7 @@
 package com.portfolio.HSDI.Controller;
 
 import com.portfolio.HSDI.Entity.Persona;
-import com.portfolio.HSDI.Service.ImpPersonaService;
+import com.portfolio.HSDI.Interface.IPersonaService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -20,8 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 public class PersonaController {
 
-    @Autowired
-    ImpPersonaService ipersonaService;
+    @Autowired IPersonaService ipersonaService;
 
     @GetMapping("/personas/traer")
     public List<Persona> getPersona() {
