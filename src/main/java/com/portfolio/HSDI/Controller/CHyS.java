@@ -27,7 +27,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/skill")
 @CrossOrigin(origins = {"https://frontend-hsdi.web.app","http://localhost:4200"})
 public class CHyS {
-    @Autowired SHyS shys;
+    @Autowired 
+    SHyS shys;
     
     @GetMapping("/lista")
     public ResponseEntity<List<HyS>> list(){

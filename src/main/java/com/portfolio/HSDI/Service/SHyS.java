@@ -15,7 +15,8 @@ import org.springframework.stereotype.Service;
 @Transactional
 @Service
 public class SHyS {
-    @Autowired RHyS rhys;
+    @Autowired 
+    RHyS rhys;
     
     public List<HyS> list(){
         return rhys.findAll();

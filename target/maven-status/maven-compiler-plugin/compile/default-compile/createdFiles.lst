@@ -15,7 +15,6 @@ com\portfolio\HSDI\Service\SEducacion.class
 com\portfolio\HSDI\Security\jwt\JwtProvider.class
 com\portfolio\HSDI\Controller\CEducacion.class
 com\portfolio\HSDI\Security\Repository\iRolRepository.class
-com\portfolio\HSDI\Interface\IPersonaService.class
 com\portfolio\HSDI\Controller\CHyS.class
 com\portfolio\HSDI\Entity\Experiencia.class
 com\portfolio\HSDI\Security\Dto\NuevoUsuario.class
@@ -36,4 +35,5 @@ com\portfolio\HSDI\HsdiApplication.class
 com\portfolio\HSDI\Security\Service\UserDetailsServicesImpl.class
 com\portfolio\HSDI\Dto\dtoEducacion.class
 com\portfolio\HSDI\Security\Controller\AuthController.class
+com\portfolio\HSDI\Dto\dtoPersona.class
 com\portfolio\HSDI\Repository\RHyS.class
