@@ -13,8 +13,6 @@ public class dtoProyecto {
     private String descripcion;
     @NotBlank
     private String link;
-    @NotBlank
-    private String img;
 
     public dtoProyecto() {
     }
@@ -23,7 +21,6 @@ public class dtoProyecto {
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.link = link;
-        this.img = img;
     }
 
     public String getNombre() {
@@ -49,14 +46,4 @@ public class dtoProyecto {
     public void setLink(String link) {
         this.link = link;
     }
-
-    public String getImg() {
-        return img;
-    }
-
-    public void setImg(String img) {
-        this.img = img;
-    }
-    
-    
 }

@@ -66,14 +66,11 @@ public class CProyecto {
         if(StringUtils.isBlank(dtoproyecto.getLink())){
             return new ResponseEntity(new Mensaje("El link al proyecto es obligatorio"), HttpStatus.BAD_REQUEST);
         }
-        if(StringUtils.isBlank(dtoproyecto.getImg())){
-            return new ResponseEntity(new Mensaje("La imagen es obligatoria"), HttpStatus.BAD_REQUEST);
-        }
         if(sProyecto.existsByNombre(dtoproyecto.getNombre())){
             return new ResponseEntity(new Mensaje("La imagen es obligatoria"), HttpStatus.BAD_REQUEST);
         }
         
-        Proyecto proyecto = new Proyecto(dtoproyecto.getNombre(), dtoproyecto.getDescripcion(),dtoproyecto.getLink(),dtoproyecto.getImg());
+        Proyecto proyecto = new Proyecto(dtoproyecto.getNombre(), dtoproyecto.getDescripcion(),dtoproyecto.getLink());
         
         sProyecto.save(proyecto);
         return new ResponseEntity(new Mensaje("Proyecto creado"), HttpStatus.OK);
@@ -96,7 +93,6 @@ public class CProyecto {
         proyecto.setNombre(dtoproyecto.getNombre());
         proyecto.setDescripcion(dtoproyecto.getDescripcion());
         proyecto.setLink(dtoproyecto.getLink());
-        proyecto.setImg(dtoproyecto.getImg());
         
         sProyecto.save(proyecto);
         
